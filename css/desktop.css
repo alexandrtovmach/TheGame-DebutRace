@@ -1,0 +1,64 @@
+/*global*/
+body, header, figure, figcaption, aside, article, nav, footer, h1, h3, p {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+ul, input {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 304px;
+    overflow-x: hidden;
+	background: black;
+    font-family: 'Ubuntu', lucida console, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+p {
+    text-indent: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+.centerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(8,96,114);
+    min-height: 10px;
+    min-width: 70px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+	transition: 0.5s;
+}
+.button:hover {
+    background-color: rgb(57,227,248);
+}
+.hidden {
+    display: none;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc(100% - 2*10px);
+    padding: 10px;
+    background: linear-gradient(to right, transparent 40%, rgba(57,227,248,0.7) 70%);
+}
+/*footer*/
+footer {
+}
