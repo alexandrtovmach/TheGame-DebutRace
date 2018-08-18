@@ -1,18 +1,18 @@
 .content {
 	position: relative;
 	height: calc(100vh -50px);	
-    background-image: url(../img/bg_city.png);
+	background-image: url(../img/bg_city.png);
 	background-position: 0 0;
 	background-size: 100%;
 	background-repeat: repeat-x;
 }
 .land {
-	perspective: 200px;
+	perspective: 245px;
 }
 .road  {
 	width: 500px;
 	height: 500px;
-	transform: rotateX(40deg);
+	transform: rotateX(45deg) scaleY(4) scaleX(1);
 	background-image: url(../img/asphalt.png);
 	background-size: contain;
 	animation: road 10s linear 0s infinite;
@@ -29,6 +29,28 @@
 	height: 300px;
 	background-image: url(../img/redcar.png);
 	background-size: contain;
-	transition: 0.4s;
+	transition: 0.8s;
 	transition-timing-function: easy-in-out;
+}
+.left {
+	transform: skew(-15deg) rotateZ(5deg);
+	left: calc(50% - 15% - 0.5*300px);
+}
+.right {
+	transform: skew(15deg) rotateZ(-5deg);
+	left: calc(50% + 15% - 0.5*300px);
+}
+
+
+.left_press {
+	transform: skew(20deg) rotateZ(-20deg);
+}
+.right_press {
+	transform: skew(-20deg) rotateZ(20deg);
+}
+.accelerate_press {
+	transform: translateY(-30%) scale(0.8);
+}
+.break_press {
+	transform: translateY(30%) scale(1.25);
 }
